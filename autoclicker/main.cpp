@@ -10,6 +10,8 @@
 #endif
 
     using namespace std;
+   
+
 
     void menu()
     {
@@ -62,7 +64,6 @@
     {
         menu();
         clicker();
-        
 
         return 0;
     }
