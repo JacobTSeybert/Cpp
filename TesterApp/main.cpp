@@ -33,21 +33,17 @@
             {
                 click = false;
             }
-            else {
-                cout << "Incorrect input\n";
-            }
-
-            if (click == true) //if click == true it will presss the mouse button down and up 
-            {
-                mouse_event(MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0);
-                mouse_event(MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
-                Sleep(1); //Speed between double click
-                mouse_event(MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0);
-                mouse_event(MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
+                if (click == true) //if click == true it will presss the mouse button down and up 
+                {
+                    mouse_event(MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0);
+                    mouse_event(MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
+                    Sleep(1); //Speed between double click
+                    mouse_event(MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0);
+                    mouse_event(MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
                 
                 //set seed to (0))
-                int random = 0;
-                srand(time(NULL));
+                //int random = 0;
+                //srand(time(NULL));
                 //generate random number
                 //zfor (int i = 0l )
 
@@ -64,10 +60,10 @@
                 }
                 //cout << random << "\n"; */
                 //Sleep(180000); //you can adjust the speed of the click here 60000 is one minute
-            }
+                }
         }
     }
-
+    
     int main()
     {
         menu();
